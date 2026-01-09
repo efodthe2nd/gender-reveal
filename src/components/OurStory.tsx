@@ -84,16 +84,18 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
       } gap-8 lg:gap-12 items-center mb-16 lg:mb-24`}
       style={{ animationDelay: `${index * 200}ms` }}
     >
-      {/* Image */}
+      {/* Image with gradient frame */}
       <div className="w-full lg:w-1/2">
-        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-          <Image
-            src={card.image}
-            alt={card.title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
+        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#722F37] to-[#CC5500] p-3 md:p-4">
+          <div className="relative w-full h-full rounded-xl overflow-hidden">
+            <Image
+              src={card.image}
+              alt={card.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </div>
 
