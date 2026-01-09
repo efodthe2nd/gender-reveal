@@ -38,7 +38,7 @@ const detailCards: DetailCard[] = [
     content: (
       <>
         <p className="text-xl md:text-2xl font-semibold mb-2">
-          Presbyterian Church of Nigeria
+          Lagos Presbyterian Church Of Nigeria
         </p>
         <p className="text-lg text-[#722F37] mb-2">Yaba Parish</p>
         <p className="text-gray-600 mb-4">
@@ -60,8 +60,8 @@ const detailCards: DetailCard[] = [
         <p className="text-xl md:text-2xl font-semibold mb-4">Formal Elegance</p>
         <p className="text-gray-600 mb-3">Kindly wear tones of...</p>
         <div className="flex flex-wrap gap-2 justify-center mb-4">
-          <span className="px-3 py-1 bg-black text-white rounded-full text-sm">
-            Black
+          <span className="px-3 py-1 bg-white text-black border border-gray-300 rounded-full text-sm">
+            White
           </span>
           <span className="px-3 py-1 bg-[#CC5500] text-white rounded-full text-sm">
             Burnt Orange

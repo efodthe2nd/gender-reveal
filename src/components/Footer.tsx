@@ -13,7 +13,7 @@ export default function Footer() {
           <h2 className="font-script text-4xl md:text-5xl mb-4">
             Grace & David
           </h2>
-          <p className="text-[#D4AF37] text-lg mb-2">#GraceOfDavid</p>
+          <p className="text-[#D4AF37] text-lg mb-2">#ourfairytalewedding &apos;26</p>
           <p className="text-gray-400">14th February 2026 • Lagos, Nigeria</p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Footer() {
           <p className="flex items-center justify-center gap-1">
             Made with <Heart className="w-4 h-4 text-[#CC5500]" /> for Grace & David
           </p>
-          <p className="mt-2">© {currentYear} #GraceOfDavid. All rights reserved.</p>
+          <p className="mt-2">© {currentYear} #ourfairytalewedding &apos;26. All rights reserved.</p>
         </div>
       </div>
     </footer>
