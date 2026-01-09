@@ -45,7 +45,7 @@ Your love, support, and friendship mean the world to us, and we can't wait to ce
 
 Now bring your smiles, dance moves and vibes as we say 'I do' and step into forever together. We can't wait to see you there.`,
     signOff: "With love,",
-    signature: "David & Grace 🤍🖤",
+    signature: "Grace & David 🤍🖤",
     imagePosition: "left",
     image: "/we.jpg",
   },

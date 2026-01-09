@@ -49,12 +49,12 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "#home")}
             className="font-script text-2xl md:text-3xl text-white hover:text-[#D4AF37] transition-colors"
           >
-            D & G
+            G & D
           </a>
 
           {/* Center Text - Hidden on mobile */}
           <div className="hidden md:block font-script text-xl lg:text-2xl text-white">
-            David & Grace
+            Grace & David
           </div>
 
           {/* Desktop Navigation */}

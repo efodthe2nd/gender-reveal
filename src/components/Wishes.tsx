@@ -26,7 +26,7 @@ const sampleWishes: Wish[] = [
   {
     id: 3,
     name: "Uncle & Aunty Chukwu",
-    message: "David and Grace, your love story is beautiful! May your marriage be filled with laughter and prosperity. God bless your union!",
+    message: "Grace and David, your love story is beautiful! May your marriage be filled with laughter and prosperity. God bless your union!",
     timestamp: new Date("2026-01-25"),
   },
 ];
@@ -158,7 +158,7 @@ export default function Wishes() {
                   onChange={(e) => setMessage(e.target.value)}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#722F37] focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Write your wishes for David & Grace..."
+                  placeholder="Write your wishes for Grace & David..."
                   required
                 />
               </div>

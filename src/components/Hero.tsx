@@ -66,7 +66,7 @@ export default function Hero() {
             {slides[currentSlide].subtitle}
           </p>
           <h1 className="font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 text-white drop-shadow-lg">
-            David & Grace
+            Grace & David
           </h1>
           <p className="text-xl md:text-2xl font-light mb-4">
             We&apos;re Getting Married!
