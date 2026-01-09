@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Gift as GiftIcon, Heart, X } from "lucide-react";
+import { Heart, X } from "lucide-react";
+import Image from "next/image";
 import { gifts, Gift } from "@/lib/gifts";
 
 function GiftCard({ gift, index }: { gift: Gift; index: number }) {
@@ -42,11 +43,15 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
             Featured Gift
           </div>
         )}
-        {/* Image Placeholder */}
-        <div className="aspect-square relative bg-gradient-to-br from-[#722F37]/20 to-[#CC5500]/20">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <GiftIcon className="w-16 h-16 text-[#722F37]/40" />
-          </div>
+        {/* Image */}
+        <div className="aspect-square relative">
+          <Image
+            src={gift.image}
+            alt={gift.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          />
         </div>
 
         {/* Content */}
