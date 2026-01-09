@@ -95,23 +95,38 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
               <p className="text-gray-600 mb-4">
                 You&apos;ve selected <strong>{gift.name}</strong> ({gift.price})
               </p>
-              <p className="text-gray-600 mb-6">
-                Please contact us directly to complete your gift. We truly appreciate your generosity!
+              <p className="text-gray-600 mb-4">
+                Please send your gift to the account below:
               </p>
-              <div className="space-y-3">
-                <a
-                  href="mailto:davidandgrace2026@email.com"
-                  className="block w-full py-3 bg-[#722F37] text-white rounded-full hover:bg-[#CC5500] transition-colors"
-                >
-                  Send Email
-                </a>
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="block w-full py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
-                >
-                  Close
-                </button>
+
+              {/* Bank Details */}
+              <div className="bg-[#FAF9F6] rounded-lg p-4 mb-6 text-left">
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide">Bank</p>
+                    <p className="font-semibold text-gray-900">Opay</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide">Account Number</p>
+                    <p className="font-semibold text-gray-900 text-lg">8132793301</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide">Account Name</p>
+                    <p className="font-semibold text-gray-900">Grace Emeh</p>
+                  </div>
+                </div>
               </div>
+
+              <p className="text-sm text-gray-500 mb-4">
+                We truly appreciate your generosity!
+              </p>
+
+              <button
+                onClick={() => setShowModal(false)}
+                className="w-full py-3 bg-[#722F37] text-white rounded-full hover:bg-[#CC5500] transition-colors"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
