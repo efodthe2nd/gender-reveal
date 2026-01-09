@@ -49,7 +49,7 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "#home")}
             className="font-script text-2xl md:text-3xl text-white hover:text-[#D4AF37] transition-colors"
           >
-            G & D
+            Our Fairytale Wedding
           </a>
 
           {/* Center Text - Hidden on mobile */}
