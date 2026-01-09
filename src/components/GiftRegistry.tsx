@@ -131,8 +131,7 @@ export default function GiftRegistry() {
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto mb-6" />
           <p className="max-w-2xl mx-auto text-gray-600">
-            Your presence is the greatest gift, but if you&apos;d like to contribute
-            to our new journey together, here are some items that would mean the
+            Your presence is the greatest gift, but if you love love and you love US then you&apos;d get us an amazing gift by contributing to our new journey together, here are some items that would mean the
             world to us.
           </p>
         </div>
