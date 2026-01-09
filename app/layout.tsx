@@ -15,12 +15,12 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Grace & David | #GraceOfDavid | February 14th, 2026",
+  title: "Grace & David | #TheFairyTale '26 | February 14th, 2026",
   description:
-    "Join us as we celebrate the wedding of Grace & David on Valentine's Day, February 14th, 2026. #GraceOfDavid",
+    "Join us as we celebrate the wedding of Grace & David on Valentine's Day, February 14th, 2026. #TheFairyTale",
   keywords: ["wedding", "Grace", "David", "GraceOfDavid", "Valentine's Day"],
   openGraph: {
-    title: "Grace & David Wedding | #GraceOfDavid",
+    title: "Grace & David Wedding | #TheFairyTale",
     description: "We're getting married on February 14th, 2026!",
     type: "website",
   },

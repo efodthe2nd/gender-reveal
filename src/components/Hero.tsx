@@ -17,7 +17,7 @@ const slides = [
   {
     id: 3,
     gradient: "gradient-hero-3",
-    subtitle: "#GraceOfDavid",
+    subtitle: "#TheFairyTale",
   },
 ];
 
