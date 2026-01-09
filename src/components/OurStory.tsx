@@ -86,7 +86,7 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
     >
       {/* Image */}
       <div className="w-full lg:w-1/2">
-        <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-xl">
+        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
           <Image
             src={card.image}
             alt={card.title}
@@ -94,8 +94,6 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
-          {/* Decorative border */}
-          <div className="absolute inset-4 border-2 border-[#D4AF37]/30 rounded pointer-events-none" />
         </div>
       </div>
 
