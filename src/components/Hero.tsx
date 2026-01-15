@@ -21,6 +21,8 @@ const slides = [
     id: 3,
     gradient: "gradient-hero-3",
     subtitle: "#TheFairyTale",
+    video: "/hero-run.mp4",
+    blur: true,
   },
 ];
 
