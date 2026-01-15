@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Gift } from "lucide-react";
 
 const slides = [
   {
@@ -119,6 +119,15 @@ export default function Hero() {
           />
         ))}
       </div>
+
+      {/* Floating Gift Button */}
+      <a
+        href="#gifts"
+        className="absolute bottom-8 right-4 z-20 flex items-center gap-2 px-5 py-3 bg-[#D4AF37] text-black rounded-full shadow-lg hover:bg-[#CC5500] hover:text-white transition-all duration-300 animate-pulse-slow hover:animate-none hover:scale-105"
+      >
+        <Gift className="w-5 h-5" />
+        <span className="font-medium text-sm">Bless Our Union</span>
+      </a>
     </section>
   );
 }
