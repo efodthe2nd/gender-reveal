@@ -14,6 +14,8 @@ const slides = [
     id: 2,
     gradient: "gradient-hero-2",
     subtitle: "Save the Date",
+    video: "/grok-video-swirl.mp4",
+    blur: true,
   },
   {
     id: 3,
@@ -62,7 +64,7 @@ export default function Hero() {
               muted
               loop
               playsInline
-              className="absolute inset-0 w-full h-full object-cover"
+              className={`absolute inset-0 w-full h-full object-cover ${slide.blur ? "blur-sm scale-105" : ""}`}
             >
               <source src={slide.video} type="video/mp4" />
             </video>
