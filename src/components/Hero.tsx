@@ -8,6 +8,7 @@ const slides = [
     id: 1,
     gradient: "gradient-hero-1",
     subtitle: "Photo Coming Soon",
+    video: "/hero-bg-video.mp4",
   },
   {
     id: 2,
@@ -52,8 +53,20 @@ export default function Hero() {
           key={slide.id}
           className={`absolute inset-0 transition-opacity duration-500 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
-          } ${slide.gradient}`}
+          } ${!slide.video ? slide.gradient : ""}`}
         >
+          {/* Video Background */}
+          {slide.video && (
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src={slide.video} type="video/mp4" />
+            </video>
+          )}
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />
         </div>

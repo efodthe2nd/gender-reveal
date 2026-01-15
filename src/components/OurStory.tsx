@@ -21,7 +21,7 @@ const storyCards: StoryCard[] = [
 
 You make everything, both the ordinary and the wild, feel beautiful. I still can't believe I get to love you, to do life with you, and to call you mine.`,
     signOff: "Forever yours,",
-    signature: "David 🖤",
+    signature: "David ❤️",
     imagePosition: "left",
     image: "/david_personal.jpg",
   },
@@ -45,7 +45,7 @@ Your love, support, and friendship mean the world to us, and we can't wait to ce
 
 Now bring your smiles, dance moves and vibes as we say 'I do' and step into forever together. We can't wait to see you there.`,
     signOff: "With love,",
-    signature: "Grace & David 🤍🖤",
+    signature: "Grace & David 🤍❤️",
     imagePosition: "left",
     image: "/we.jpg",
   },
