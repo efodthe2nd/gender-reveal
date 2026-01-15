@@ -26,7 +26,7 @@ const detailCards: DetailCard[] = [
           18th April 2026
         </p>
         <div className="text-gray-600">
-          <p>Wedding Vows: 11:00 AM</p>
+          <p>Wedding Vows: 10:00 AM</p>
         </div>
       </>
     ),

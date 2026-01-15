@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Gift } from "lucide-react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -34,6 +34,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
@@ -103,5 +104,16 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+
+      {/* Sticky Gift Button */}
+      <a
+        href="#gifts"
+        onClick={(e) => handleNavClick(e, "#gifts")}
+        className="fixed top-20 md:top-24 right-4 z-40 flex items-center gap-2 px-4 py-2 bg-[#D4AF37] text-black rounded-full shadow-lg hover:bg-[#CC5500] hover:text-white transition-all duration-300 animate-pulse-slow hover:animate-none hover:scale-105"
+      >
+        <Gift className="w-4 h-4" />
+        <span className="font-medium text-sm">Bless Our Union</span>
+      </a>
+    </>
   );
 }
