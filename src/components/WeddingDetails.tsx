@@ -23,7 +23,7 @@ const detailCards: DetailCard[] = [
       <>
         <p className="text-xl md:text-2xl font-semibold mb-2">Saturday,</p>
         <p className="text-2xl md:text-3xl font-script text-[#CC5500] mb-4">
-          14th February 2026
+          18th April 2026
         </p>
         <div className="text-gray-600">
           <p>Wedding Vows: 11:00 AM</p>

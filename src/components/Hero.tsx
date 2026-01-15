@@ -72,15 +72,12 @@ export default function Hero() {
             We&apos;re Getting Married!
           </p>
           <div className="flex items-center justify-center space-x-4 text-2xl md:text-3xl font-light tracking-wider">
-            <span>14</span>
+            <span>18</span>
             <span className="text-[#D4AF37]">•</span>
-            <span>02</span>
+            <span>04</span>
             <span className="text-[#D4AF37]">•</span>
             <span>2026</span>
           </div>
-          <p className="mt-6 text-lg md:text-xl text-[#D4AF37] font-script">
-            Valentine&apos;s Day
-          </p>
         </div>
 
         {/* Scroll indicator */}

@@ -14,7 +14,7 @@ export default function Footer() {
             Grace & David
           </h2>
           <p className="text-[#D4AF37] text-lg mb-2">#ourfairytalewedding &apos;26</p>
-          <p className="text-gray-400">14th February 2026 • Lagos, Nigeria</p>
+          <p className="text-gray-400">18th April 2026 • Lagos, Nigeria</p>
         </div>
 
         {/* Divider */}
