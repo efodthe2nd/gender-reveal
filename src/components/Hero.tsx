@@ -51,25 +51,21 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
-      {/* Slides */}
+      Slides
       {slides.map((slide, index) => (
         <div
           key={slide.id}
           className={`absolute inset-0 transition-opacity duration-500 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
-          } ${!slide.video ? slide.gradient : ""}`}
+          } ${!slide.image ? slide.gradient : ""}`}
         >
-          {/* Video Background */}
-          {slide.video && (
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
+          {/* Image Background */}
+          {slide.image && (
+            <img
+              src={slide.image}
+              alt="Hero"
               className={`absolute inset-0 w-full h-full object-cover ${slide.blur ? "blur-sm scale-105" : ""}`}
-            >
-              <source src={slide.video} type="video/mp4" />
-            </video>
+            />
           )}
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40" />
