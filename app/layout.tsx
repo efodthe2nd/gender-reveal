@@ -13,15 +13,15 @@ const dancingScript = Dancing_Script({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
 export const metadata: Metadata = {
-  title: "Grace & David | #TheFairyTale '26 | April 18th, 2026",
+  title: "Victor & Whitney | #VictorAndWhitneyReveal | May 23rd, 2026",
   description:
-    "Join us as we celebrate the wedding of Grace & David on April 18th, 2026. #TheFairyTale",
-  keywords: ["wedding", "Grace", "David", "GraceOfDavid"],
+    "Join us as we celebrate the gender reveal of Victor & Whitney on May 23rd, 2026. #VictorAndWhitneyReveal",
+  keywords: ["gender reveal", "Victor", "Whitney", "VictorAndWhitney"],
+  authors: [{ name: "Victor & Whitney" }],
   openGraph: {
-    title: "Grace & David Wedding | #TheFairyTale",
-    description: "We're getting married on April 18th, 2026!",
+    title: "Victor & Whitney Gender Reveal | #VictorAndWhitneyReveal",
+    description: "We're revealing our baby's gender on May 23rd, 2026!",
     type: "website",
   },
 };

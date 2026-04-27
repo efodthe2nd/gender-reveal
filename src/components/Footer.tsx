@@ -11,10 +11,10 @@ export default function Footer() {
         {/* Top Section */}
         <div className="text-center mb-8">
           <h2 className="font-script text-4xl md:text-5xl mb-4">
-            Grace & David
+            Victor & Whitney
           </h2>
-          <p className="text-[#D4AF37] text-lg mb-2">#ourfairytalewedding &apos;26</p>
-          <p className="text-gray-400">18th April 2026 • Lagos, Nigeria</p>
+          <p className="text-[#D4AF37] text-lg mb-2">#VictorAndWhitneyReveal &apos;26</p>
+          <p className="text-gray-400">23rd May 2026 • Lagos, Nigeria</p>
         </div>
 
         {/* Divider */}
@@ -24,21 +24,21 @@ export default function Footer() {
         <div className="flex justify-center gap-6 mb-8">
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#CC5500] transition-colors"
+            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3B82F6] transition-colors"
             aria-label="Instagram"
           >
             <Instagram className="w-5 h-5" />
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#CC5500] transition-colors"
+            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3B82F6] transition-colors"
             aria-label="Facebook"
           >
             <Facebook className="w-5 h-5" />
           </a>
           <a
-            href="mailto:davidandgrace2026@email.com"
-            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#CC5500] transition-colors"
+            href="mailto:victorandwhitney2026@email.com"
+            className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#3B82F6] transition-colors"
             aria-label="Email"
           >
             <Mail className="w-5 h-5" />
@@ -67,9 +67,9 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="text-center text-gray-500 text-sm">
           <p className="flex items-center justify-center gap-1">
-            Made with <Heart className="w-4 h-4 text-[#CC5500]" /> for Grace & David
+            Made with <Heart className="w-4 h-4 text-[#3B82F6]" /> for Victor & Whitney
           </p>
-          <p className="mt-2">© {currentYear} #ourfairytalewedding &apos;26. All rights reserved.</p>
+          <p className="mt-2">© {currentYear} #VictorAndWhitneyReveal &apos;26. All rights reserved.</p>
         </div>
       </div>
     </footer>

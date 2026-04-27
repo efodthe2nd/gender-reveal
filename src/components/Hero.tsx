@@ -7,21 +7,21 @@ const slides = [
   {
     id: 1,
     gradient: "gradient-hero-1",
-    subtitle: "Our Forever Begins",
-    video: "/hero-bg-video.mp4",
+    subtitle: "A New Chapter Begins",
+    image: "/baby-hero.PNG",
   },
   {
     id: 2,
     gradient: "gradient-hero-2",
     subtitle: "Save the Date",
-    video: "/grok-video-swirl.mp4",
+    image: "/baby-hero.PNG",
     blur: true,
   },
   {
     id: 3,
     gradient: "gradient-hero-3",
-    subtitle: "#TheFairyTale",
-    video: "/hero-run.mp4",
+    subtitle: "#VictorAndWhitneyReveal",
+    image: "/baby-hero.PNG",
     blur: true,
   },
 ];
@@ -83,15 +83,15 @@ export default function Hero() {
             {slides[currentSlide].subtitle}
           </p>
           <h1 className="font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 text-white drop-shadow-lg">
-            Grace & David
+            Victor & Whitney
           </h1>
           <p className="text-xl md:text-2xl font-light mb-4">
-            We&apos;re Getting Married!
+            We&apos;re Revealing the Gender!
           </p>
           <div className="flex items-center justify-center space-x-4 text-2xl md:text-3xl font-light tracking-wider">
-            <span>18</span>
+            <span>23</span>
             <span className="text-[#D4AF37]">•</span>
-            <span>04</span>
+            <span>05</span>
             <span className="text-[#D4AF37]">•</span>
             <span>2026</span>
           </div>

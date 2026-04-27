@@ -6,7 +6,7 @@ import { Menu, X, Gift } from "lucide-react";
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#story", label: "Our Story" },
-  { href: "#details", label: "Details" },
+  { href: "#details", label: "Event Details" },
   { href: "#gifts", label: "Gifting" },
   { href: "#wishes", label: "Wishes" },
 ];
@@ -50,12 +50,12 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "#home")}
             className="font-script text-2xl md:text-3xl text-white hover:text-[#D4AF37] transition-colors"
           >
-            Our Fairytale Wedding
+            Victor & Whitney Reveal
           </a>
 
           {/* Center Text - Hidden on mobile */}
           <div className="hidden md:block font-script text-xl lg:text-2xl text-white">
-            Grace & David
+            Victor & Whitney
           </div>
 
           {/* Desktop Navigation */}
@@ -109,10 +109,10 @@ export default function Navbar() {
       <a
         href="#gifts"
         onClick={(e) => handleNavClick(e, "#gifts")}
-        className="fixed top-20 md:top-24 right-4 z-40 flex items-center gap-2 px-4 py-2 bg-[#D4AF37] text-black rounded-full shadow-lg hover:bg-[#CC5500] hover:text-white transition-all duration-300 animate-pulse-slow hover:animate-none hover:scale-105"
+        className="fixed top-20 md:top-24 right-4 z-40 flex items-center gap-2 px-4 py-2 bg-[#D4AF37] text-black rounded-full shadow-lg hover:bg-[#3B82F6] hover:text-white transition-all duration-300 animate-pulse-slow hover:animate-none hover:scale-105"
       >
         <Gift className="w-4 h-4" />
-        <span className="font-medium text-sm">Bless Our Union</span>
+        <span className="font-medium text-sm">Send a Gift</span>
       </a>
     </>
   );

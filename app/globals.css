@@ -3,8 +3,8 @@
 :root {
   --background: #faf9f6;
   --foreground: #000000;
-  --burnt-orange: #cc5500;
-  --wine: #722f37;
+  --blue: #3b82f6;
+  --pink: #ec4899;
   --gold: #d4af37;
   --cream: #fffdd0;
   --off-white: #faf9f6;
@@ -13,8 +13,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-burnt-orange: var(--burnt-orange);
-  --color-wine: var(--wine);
+  --color-blue: var(--blue);
+  --color-pink: var(--pink);
   --color-gold: var(--gold);
   --color-cream: var(--cream);
   --color-off-white: var(--off-white);
@@ -45,24 +45,24 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--wine);
+  background: var(--pink);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--burnt-orange);
+  background: var(--blue);
 }
 
 .gradient-hero-1 {
-  background: linear-gradient(135deg, #000000 0%, #722f37 50%, #cc5500 100%);
+  background: linear-gradient(135deg, #000000 0%, #ec4899 50%, #3b82f6 100%);
 }
 
 .gradient-hero-2 {
-  background: linear-gradient(135deg, #722f37 0%, #000000 50%, #d4af37 100%);
+  background: linear-gradient(135deg, #ec4899 0%, #000000 50%, #d4af37 100%);
 }
 
 .gradient-hero-3 {
-  background: linear-gradient(135deg, #cc5500 0%, #722f37 50%, #000000 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #ec4899 50%, #000000 100%);
 }
 
 @keyframes fadeIn {

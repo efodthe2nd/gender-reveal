@@ -63,10 +63,10 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
             {gift.description}
           </p>
           <div className="flex items-center justify-between">
-            <span className="text-[#CC5500] font-semibold">{gift.price}</span>
+            <span className="text-[#3B82F6] font-semibold">{gift.price}</span>
             <button
               onClick={() => setShowModal(true)}
-              className="px-4 py-2 bg-[#722F37] text-white text-sm rounded-full hover:bg-[#CC5500] transition-colors flex items-center gap-2"
+              className="px-4 py-2 bg-[#EC4899] text-white text-sm rounded-full hover:bg-[#3B82F6] transition-colors flex items-center gap-2"
             >
               <Heart className="w-4 h-4" />
               Gift This
@@ -86,10 +86,10 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
               <X className="w-6 h-6" />
             </button>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#722F37] to-[#CC5500] flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#EC4899] to-[#3B82F6] flex items-center justify-center">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-script text-2xl text-[#722F37] mb-2">
+              <h3 className="font-script text-2xl text-[#EC4899] mb-2">
                 Thank You!
               </h3>
               <p className="text-gray-600 mb-4">
@@ -112,7 +112,7 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Account Name</p>
-                    <p className="font-semibold text-gray-900">Grace Emeh</p>
+                    <p className="font-semibold text-gray-900">Whitney Emeh</p>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
 
               <button
                 onClick={() => setShowModal(false)}
-                className="w-full py-3 bg-[#722F37] text-white rounded-full hover:bg-[#CC5500] transition-colors"
+                className="w-full py-3 bg-[#EC4899] text-white rounded-full hover:bg-[#3B82F6] transition-colors"
               >
                 Close
               </button>
@@ -141,8 +141,8 @@ export default function GiftRegistry() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#722F37] mb-4">
-            Wedding Gifts
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#EC4899] mb-4">
+            Gender Reveal Gifts
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto mb-6" />
           <p className="max-w-2xl mx-auto text-gray-600">

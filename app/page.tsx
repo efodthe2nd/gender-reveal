@@ -2,7 +2,7 @@ import {
   Navbar,
   Hero,
   OurStory,
-  WeddingDetails,
+  GenderRevealDetails,
   GiftRegistry,
   Wishes,
   Footer,
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <OurStory />
-      <WeddingDetails />
+      <GenderRevealDetails />
       <GiftRegistry />
       <Wishes />
       <Footer />

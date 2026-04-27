@@ -14,19 +14,19 @@ const sampleWishes: Wish[] = [
   {
     id: 1,
     name: "Pastor & Mrs. Johnson",
-    message: "May the Lord bless your union with joy, peace, and everlasting love. Congratulations!",
+    message: "May the Lord bless your new journey with joy, peace, and everlasting love as you prepare to welcome your little one. Congratulations!",
     timestamp: new Date("2026-01-15"),
   },
   {
     id: 2,
     name: "The Adeyemi Family",
-    message: "Wishing you both a lifetime of happiness and beautiful memories together. We can't wait to celebrate with you!",
+    message: "Wishing Victor and Whitney a lifetime of happiness and beautiful memories with your bundle of joy. We can't wait to celebrate the reveal with you!",
     timestamp: new Date("2026-01-20"),
   },
   {
     id: 3,
     name: "Uncle & Aunty Chukwu",
-    message: "Grace and David, your love story is beautiful! May your marriage be filled with laughter and prosperity. God bless your union!",
+    message: "Victor and Whitney, your story is so beautiful! May this new chapter of parenthood be filled with laughter and prosperity. God bless your growing family!",
     timestamp: new Date("2026-01-25"),
   },
 ];
@@ -35,7 +35,7 @@ function WishCard({ wish }: { wish: Wish }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#722F37] to-[#CC5500] flex items-center justify-center flex-shrink-0">
+        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#EC4899] to-[#3B82F6] flex items-center justify-center flex-shrink-0">
           <Heart className="w-6 h-6 text-white" />
         </div>
         <div>
@@ -105,12 +105,12 @@ export default function Wishes() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#722F37] mb-4">
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#EC4899] mb-4">
             Send Your Wishes
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto mb-6" />
           <p className="max-w-2xl mx-auto text-gray-600">
-            Share your love and blessings with the couple. Your kind words mean
+            Share your love and blessings with Victor & Whitney as they embark on this new chapter. Your kind words mean
             the world to us!
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function Wishes() {
           {/* Form */}
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <MessageCircle className="w-6 h-6 text-[#722F37]" />
+              <MessageCircle className="w-6 h-6 text-[#EC4899]" />
               <h3 className="font-semibold text-xl">Leave a Message</h3>
             </div>
 
@@ -139,7 +139,7 @@ export default function Wishes() {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#722F37] focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EC4899] focus:border-transparent outline-none transition-all"
                   placeholder="Enter your name"
                   required
                 />
@@ -157,8 +157,8 @@ export default function Wishes() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#722F37] focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Write your wishes for Grace & David..."
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#EC4899] focus:border-transparent outline-none transition-all resize-none"
+                  placeholder="Write your wishes for Victor & Whitney..."
                   required
                 />
               </div>
@@ -166,7 +166,7 @@ export default function Wishes() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 bg-gradient-to-r from-[#722F37] to-[#CC5500] text-white rounded-full font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
+                className="w-full py-3 bg-gradient-to-r from-[#EC4899] to-[#3B82F6] text-white rounded-full font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   "Sending..."
@@ -189,7 +189,7 @@ export default function Wishes() {
           {/* Wishes List */}
           <div className="space-y-4">
             <h3 className="font-semibold text-xl mb-6 flex items-center gap-3">
-              <Heart className="w-6 h-6 text-[#CC5500]" />
+              <Heart className="w-6 h-6 text-[#3B82F6]" />
               Messages from Loved Ones
             </h3>
             <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2">

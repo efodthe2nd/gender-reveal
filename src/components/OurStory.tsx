@@ -16,38 +16,38 @@ interface StoryCard {
 const storyCards: StoryCard[] = [
   {
     id: 1,
-    title: "Dear Grace",
-    content: `From the moment you said 'yes,' my world has been brighter. You've filled my days with laughter, peace, and a kind of love I never knew I was missing. You are my answered prayer, my muse, my calm after every storm.
+    title: "A New Adventure Begins",
+    content: `Life has a beautiful way of surprising us with the most wonderful gifts. We are beyond thrilled to share that our family is growing! This journey has already brought us so much joy, and we can't wait to see what the future holds.
 
-You make everything, both the ordinary and the wild, feel beautiful. I still can't believe I get to love you, to do life with you, and to call you mine.`,
-    signOff: "Forever yours,",
-    signature: "David ❤️",
+From the first moment we saw that tiny heartbeat, we knew our lives were changed forever. We are so excited to embark on this incredible path of parenthood and to share this special chapter with all of you.`,
+    signOff: "With so much joy,",
+    signature: "Victor & Whitney ❤️",
     imagePosition: "left",
-    image: "/david_personal.jpg",
+    image: "/we.jpg",
   },
   {
     id: 2,
-    title: "Dear David",
-    content: `From the first time we met to forever, I still can't believe how love snuck up on us and turned into this beautiful story we're living. I can't wait to hold your hand, laugh till it hurts, and dance with you all night.
+    title: "Counting Down the Days",
+    content: `Every day brings us closer to meeting our little one, and the anticipation is more than we can put into words. We've been busy dreaming of tiny toes, sweet lullabies, and the many firsts that await us.
 
-You're my calm, my laughter, my person, my favorite human in the whole wide world. Here's to a love that's real, steady, and worth more than anything money could ever buy. 🥂`,
-    signOff: "With all my love,",
-    signature: "Grace 🧡",
+This season of waiting has been filled with reflection, love, and a deep sense of gratitude. We are so blessed to have a community of family and friends who will be part of our child's life, teaching them, loving them, and watching them grow.`,
+    signOff: "Can't wait to meet you,",
+    signature: "Mom & Dad 🧡",
     imagePosition: "right",
     image: "/grace_personal.jpg",
   },
   {
     id: 3,
-    title: "To Our Family and Friends",
-    content: `We're tying the knot and turning up the joy! 💍✨ Thank you for being part of our story.
+    title: "The Big Reveal",
+    content: `The secret is out—there's a baby on the way! But there's still one big question left to answer... Will it be pink or will it be blue?
 
-Your love, support, and friendship mean the world to us, and we can't wait to celebrate this new chapter with you.
+We invite you to join us for this special moment as we reveal the gender of our little bundle of joy. Your love and support have always been the foundation of our story, and we couldn't imagine celebrating this milestone without you.
 
-Now bring your smiles, dance moves and vibes as we say 'I do' and step into forever together. We can't wait to see you there.`,
+Get ready for some surprises, some cheers, and a whole lot of love!`,
     signOff: "With love,",
-    signature: "Grace & David 🤍❤️",
+    signature: "Victor & Whitney 🤍❤️",
     imagePosition: "left",
-    image: "/we.jpg",
+    image: "/david_personal.jpg",
   },
 ];
 
@@ -86,7 +86,7 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
     >
       {/* Image with gradient frame - square postcard style */}
       <div className="w-full lg:w-1/2 max-w-md mx-auto lg:max-w-none">
-        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#722F37] to-[#CC5500] p-3 md:p-4">
+        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#EC4899] to-[#3B82F6] p-3 md:p-4">
           <div className="relative w-full h-full rounded-xl overflow-hidden">
             <Image
               src={card.image}
@@ -102,7 +102,7 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
       {/* Text Content */}
       <div className="w-full lg:w-1/2">
         <div className="bg-white p-8 md:p-10 rounded-lg shadow-lg border border-[#D4AF37]/20">
-          <h3 className="font-script text-3xl md:text-4xl text-[#722F37] mb-6">
+          <h3 className="font-script text-3xl md:text-4xl text-[#EC4899] mb-6">
             {card.title}
           </h3>
           <div className="text-gray-700 leading-relaxed whitespace-pre-line mb-6">
@@ -110,7 +110,7 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
           </div>
           <div className="text-right">
             <p className="text-gray-600 italic mb-2">{card.signOff}</p>
-            <p className="font-script text-2xl text-[#CC5500]">{card.signature}</p>
+            <p className="font-script text-2xl text-[#3B82F6]">{card.signature}</p>
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@ export default function OurStory() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#722F37] mb-4">
-            The Love Letter
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-[#EC4899] mb-4">
+            We&apos;re Expecting!
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto" />
         </div>
