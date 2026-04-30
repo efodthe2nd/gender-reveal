@@ -8,20 +8,20 @@ const slides = [
     id: 1,
     gradient: "gradient-hero-1",
     subtitle: "A New Chapter Begins",
-    image: "/baby-hero.PNG",
+    image: "/whitney_victor_4.jpeg",
   },
   {
     id: 2,
     gradient: "gradient-hero-2",
     subtitle: "Save the Date",
-    image: "/baby-hero.PNG",
+    image: "/whitney_victor_4.jpeg",
     blur: true,
   },
   {
     id: 3,
     gradient: "gradient-hero-3",
     subtitle: "#VictorAndWhitneyReveal",
-    image: "/baby-hero.PNG",
+    image: "/whitney_victor_4.jpeg",
     blur: true,
   },
 ];

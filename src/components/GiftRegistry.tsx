@@ -108,7 +108,7 @@ function GiftCard({ gift, index }: { gift: Gift; index: number }) {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Account Number</p>
-                    <p className="font-semibold text-gray-900 text-lg">8132793301</p>
+                    <p className="font-semibold text-gray-900 text-lg">9041120389</p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Account Name</p>

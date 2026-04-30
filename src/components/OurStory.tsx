@@ -23,7 +23,7 @@ From the first moment we saw that tiny heartbeat, we knew our lives were changed
     signOff: "With so much joy,",
     signature: "Victor & Whitney ❤️",
     imagePosition: "left",
-    image: "/we.jpg",
+    image: "/whitney_victor_1.jpeg",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ This season of waiting has been filled with reflection, love, and a deep sense o
     signOff: "Can't wait to meet you,",
     signature: "Mom & Dad 🧡",
     imagePosition: "right",
-    image: "/grace_personal.jpg",
+    image: "/whitney_victor_2.jpeg",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ Get ready for some surprises, some cheers, and a whole lot of love!`,
     signOff: "With love,",
     signature: "Victor & Whitney 🤍❤️",
     imagePosition: "left",
-    image: "/david_personal.jpg",
+    image: "/whitney_victor_3.jpeg",
   },
 ];
 
