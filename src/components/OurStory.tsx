@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Countdown from "./Countdown";
 
 interface StoryCard {
   id: number;
@@ -10,7 +11,8 @@ interface StoryCard {
   signOff: string;
   signature: string;
   imagePosition: "left" | "right";
-  image: string;
+  image?: string;
+  showCountdown?: boolean;
 }
 
 const storyCards: StoryCard[] = [
@@ -23,7 +25,7 @@ From the first moment we saw that tiny heartbeat, we knew our lives were changed
     signOff: "With so much joy,",
     signature: "Victor & Whitney ❤️",
     imagePosition: "left",
-    image: "/whitney_victor_1.jpeg",
+    image: "/new_adventure.png",
   },
   {
     id: 2,
@@ -34,7 +36,7 @@ This season of waiting has been filled with reflection, love, and a deep sense o
     signOff: "Can't wait to meet you,",
     signature: "Mom & Dad 🧡",
     imagePosition: "right",
-    image: "/whitney_victor_2.jpeg",
+    showCountdown: true,
   },
   {
     id: 3,
@@ -47,7 +49,7 @@ Get ready for some surprises, some cheers, and a whole lot of love!`,
     signOff: "With love,",
     signature: "Victor & Whitney 🤍❤️",
     imagePosition: "left",
-    image: "/whitney_victor_3.jpeg",
+    image: "/big_reveal.png",
   },
 ];
 
@@ -75,32 +77,37 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
   }, []);
 
   const isImageLeft = card.imagePosition === "left";
+  const hasImage = !!card.image;
 
   return (
     <div
       ref={cardRef}
       className={`opacity-0 flex flex-col ${
-        isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+        hasImage 
+          ? (isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse") 
+          : "items-center text-center"
       } gap-8 lg:gap-12 items-center mb-16 lg:mb-24`}
       style={{ animationDelay: `${index * 200}ms` }}
     >
       {/* Image with gradient frame - square postcard style */}
-      <div className="w-full lg:w-1/2 max-w-md mx-auto lg:max-w-none">
-        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#EC4899] to-[#3B82F6] p-3 md:p-4">
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
-            <Image
-              src={card.image}
-              alt={card.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+      {hasImage && (
+        <div className="w-full lg:w-1/2 max-w-md mx-auto lg:max-w-none">
+          <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#EC4899] to-[#3B82F6] p-3 md:p-4">
+            <div className="relative w-full h-full rounded-xl overflow-hidden">
+              <Image
+                src={card.image!}
+                alt={card.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Text Content */}
-      <div className="w-full lg:w-1/2">
+      <div className={hasImage ? "w-full lg:w-1/2" : "w-full max-w-3xl"}>
         <div className="bg-white p-8 md:p-10 rounded-lg shadow-lg border border-[#D4AF37]/20">
           <h3 className="font-script text-3xl md:text-4xl text-[#EC4899] mb-6">
             {card.title}
@@ -108,7 +115,15 @@ function StoryCardComponent({ card, index }: { card: StoryCard; index: number })
           <div className="text-gray-700 leading-relaxed whitespace-pre-line mb-6">
             {card.content}
           </div>
-          <div className="text-right">
+          
+          {card.showCountdown && (
+            <div className="mb-8">
+              <p className="text-center text-sm uppercase tracking-widest text-[#D4AF37] font-bold mb-2">Countdown to Reveal</p>
+              <Countdown targetDate="2026-05-23T12:00:00" />
+            </div>
+          )}
+
+          <div className={hasImage ? "text-right" : "text-center mt-6"}>
             <p className="text-gray-600 italic mb-2">{card.signOff}</p>
             <p className="font-script text-2xl text-[#3B82F6]">{card.signature}</p>
           </div>

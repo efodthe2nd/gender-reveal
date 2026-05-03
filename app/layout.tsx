@@ -14,13 +14,13 @@ const dancingScript = Dancing_Script({
   weight: ["400", "500", "600", "700"],
 });
 export const metadata: Metadata = {
-  title: "Victor & Whitney | #VictorAndWhitneyReveal | May 23rd, 2026",
+  title: "Victor & Whitney | #babygenderreveal | May 23rd, 2026",
   description:
-    "Join us as we celebrate the gender reveal of Victor & Whitney on May 23rd, 2026. #VictorAndWhitneyReveal",
+    "Join us as we celebrate the gender reveal of Victor & Whitney on May 23rd, 2026. #babygenderreveal",
   keywords: ["gender reveal", "Victor", "Whitney", "VictorAndWhitney"],
   authors: [{ name: "Victor & Whitney" }],
   openGraph: {
-    title: "Victor & Whitney Gender Reveal | #VictorAndWhitneyReveal",
+    title: "Victor & Whitney Gender Reveal | #babygenderreveal",
     description: "We're revealing our baby's gender on May 23rd, 2026!",
     type: "website",
   },

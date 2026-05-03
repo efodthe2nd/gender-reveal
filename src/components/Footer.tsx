@@ -13,7 +13,7 @@ export default function Footer() {
           <h2 className="font-script text-4xl md:text-5xl mb-4">
             Victor & Whitney
           </h2>
-          <p className="text-[#D4AF37] text-lg mb-2">#VictorAndWhitneyReveal &apos;26</p>
+          <p className="text-[#D4AF37] text-lg mb-2">#babygenderreveal</p>
           <p className="text-gray-400">23rd May 2026 • Lagos, Nigeria</p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Footer() {
           <p className="flex items-center justify-center gap-1">
             Made with <Heart className="w-4 h-4 text-[#3B82F6]" /> for Victor & Whitney
           </p>
-          <p className="mt-2">© {currentYear} #VictorAndWhitneyReveal &apos;26. All rights reserved.</p>
+          <p className="mt-2">© {currentYear} #babygenderreveal. All rights reserved.</p>
         </div>
       </div>
     </footer>
