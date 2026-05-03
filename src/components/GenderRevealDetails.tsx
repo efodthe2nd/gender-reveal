@@ -58,15 +58,15 @@ const detailCards: DetailCard[] = [
     content: (
       <>
         <p className="text-xl md:text-2xl font-semibold mb-4">Formal Elegance</p>
-        <p className="text-gray-600 mb-3">Kindly wear tones of...</p>
+        <p className="text-gray-600 mb-3">Kindly ...</p>
         <div className="flex flex-wrap gap-2 justify-center mb-4">
           <span className="px-3 py-1 bg-white text-black border border-gray-300 rounded-full text-sm">
-            White
+            Blue Or Pink
           </span>
         </div>
         <div className="text-sm text-gray-500 space-y-1">
-          <p>Ladies: Gele or fascinators welcome</p>
-          <p>Gentlemen: Traditional or suits</p>
+          <p>Rep your gender with style!</p>
+          
         </div>
       </>
     ),
